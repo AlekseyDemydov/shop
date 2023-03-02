@@ -1,5 +1,5 @@
 export const data = {
-  productData: [
+  car: [
     {
       id: 1,
       title: 'Ford Mustang',
@@ -20,6 +20,22 @@ export const data = {
       price: '15000',
       img: require('./img/lanos.jpg'),
       text: 'Тюнинг Ланос: заказать запчасти в интернет-магазине - Автомобильный клуб Lanos (Сенс)',
+    },
+  ],
+  moto: [
+    {
+      id: 1,
+      title: 'Suzuki',
+      price: '5000',
+      img: require('./img/suzuki.jpg'),
+      text: 'Мотоцикли Suzuki – Купити в Україні.',
+    },
+    {
+      id: 2,
+      title: 'Bmv',
+      price: '7000',
+      img: require('./img/bmv.jpg'),
+      text: 'Новый Шевроле Круз 2015 - Chevrolet Cruze 2015.',
     },
   ],
 };

@@ -1,3 +1,4 @@
+import { Basket } from 'pages/Basket';
 import { useDispatch, useSelector } from 'react-redux';
 import { logOut } from 'redux/userSlice';
 import s from './scss/Style.module.scss'
@@ -8,7 +9,7 @@ export const UserMenu = () => {
   return (
     <>
       <div className={s.basketBox}>
-        <div className={s.basket}></div>
+        <Basket/>
         &nbsp; &nbsp;
         {login}
         &nbsp; &nbsp;

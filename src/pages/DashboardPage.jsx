@@ -1,6 +1,4 @@
 import { useLogOutRedirect } from 'hooks/useLogOutRedirect';
-import { CartProvider } from 'react-use-cart';
-import { Basket } from './Basket';
 import { data } from './CatalogList/data';
 
 import { List } from './CatalogList/List';
@@ -10,9 +8,22 @@ export const DashboardPage = () => {
   useLogOutRedirect();
   return (
     <>
-    <CartProvider>
+    
       <div className={s.box}>
-        {data.productData.map((item, index) => {
+        {data.car.map((item, index) => {
+          return (
+            <List
+              key={index}
+              img={item.img}
+              title={item.title}
+              price={item.price}
+              text={item.text}
+              id={item.id}
+              item={item}
+            />
+          );
+        })}
+        {data.moto.map((item, index) => {
           return (
             <List
               key={index}
@@ -26,8 +37,8 @@ export const DashboardPage = () => {
           );
         })}
       </div>
-        <Basket />
-        </CartProvider>
+      
+       
     </>
   );
 };

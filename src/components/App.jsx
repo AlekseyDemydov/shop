@@ -1,11 +1,12 @@
 import { LoginPage, DashboardPage } from 'pages';
-
+import { CartProvider } from 'react-use-cart';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout';
 
 export const App = () => {
   return (
     <>
+    <CartProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="login" element={<LoginPage />} />
@@ -14,6 +15,7 @@ export const App = () => {
           <Route />
         </Route>
       </Routes>
+      </CartProvider>
     </>
   );
 };
