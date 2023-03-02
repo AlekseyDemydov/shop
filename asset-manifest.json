@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shop/static/css/main.9e8b4c22.css",
+    "main.js": "/shop/static/js/main.0f2677e2.js",
+    "static/media/ford.jpg": "/shop/static/media/ford.7a8ae1fc38284b6fc6e1.jpg",
+    "static/media/lanos.jpg": "/shop/static/media/lanos.02e5cf3469e87cdf9263.jpg",
+    "static/media/shevrole.jpg": "/shop/static/media/shevrole.7dab2ef1bf79182bc6c0.jpg",
+    "index.html": "/shop/index.html",
+    "main.9e8b4c22.css.map": "/shop/static/css/main.9e8b4c22.css.map",
+    "main.0f2677e2.js.map": "/shop/static/js/main.0f2677e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e8b4c22.css",
+    "static/js/main.0f2677e2.js"
+  ]
+}
