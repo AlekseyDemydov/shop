@@ -24,14 +24,14 @@ export const data = {
   ],
   moto: [
     {
-      id: 1,
+      id: 4,
       title: 'Suzuki',
       price: '5000',
       img: require('./img/suzuki.jpg'),
       text: 'Мотоцикли Suzuki – Купити в Україні.',
     },
     {
-      id: 2,
+      id: 5,
       title: 'Bmv',
       price: '7000',
       img: require('./img/bmv.jpg'),
