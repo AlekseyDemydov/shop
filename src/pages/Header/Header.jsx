@@ -8,6 +8,8 @@ export const Header = () => {
       <header className={s.header}>
         <nav>
           <Link to="/dashboard">Dashboard</Link>
+          &nbsp;&nbsp;
+          {/* <Link to="/login">Log In</Link> */}
         </nav>
         <div>
           <Basket />
