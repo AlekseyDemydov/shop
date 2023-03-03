@@ -1,11 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Form } from 'pages/Form/Form';
+// import { Link } from 'react-router-dom';
 import { useCart } from 'react-use-cart';
 import s from './Basket.module.scss';
 
-
-export const BasketItem = () => {
-  const { items, cartTotal, emptyCart, updateItemQuantity, removeItem } =
-    useCart();
+export const BasketPageItem = () => {
+  const {
+    items,
+    isEmpty,
+    cartTotal,
+    emptyCart,
+    updateItemQuantity,
+    removeItem,
+  } = useCart();
   return (
     <>
       {items.map((item, index) => {
@@ -33,7 +39,16 @@ export const BasketItem = () => {
       })}
       <h5>total price: {cartTotal} $</h5>
       <button onClick={() => emptyCart()}>clear</button>
-      <Link to='/basket'>офрмить</Link>
+      <br />
+
+      {!isEmpty && (
+        <Form
+          item={items.map(item => {
+            return item.title;
+          })}
+          summ={cartTotal}
+        />
+      )}
     </>
   );
 };

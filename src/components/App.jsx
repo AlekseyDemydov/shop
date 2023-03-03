@@ -5,6 +5,8 @@ import { Layout } from './Layout/Layout';
 import { DashboardPage } from 'pages/Dashboard/DashboardPage';
 import { Car } from 'pages/Item/Car/Car';
 import { Moto } from 'pages/Item/Moto/Moto';
+import { BasketPage } from 'pages/Basket/BasketPage';
+// import { Form } from 'pages/Form/Form';
 // import { LoginPage } from 'pages/LoginPage/LoginPage';
 
 export const App = () => {
@@ -18,6 +20,8 @@ export const App = () => {
             <Route path='car' element={<Car/>}/>
             <Route path='moto' element={<Moto/>}/>
           </Route>
+          <Route path='basket' element={<BasketPage/>}/>
+          {/* <Route path='form' element={<Form/>}/> */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
