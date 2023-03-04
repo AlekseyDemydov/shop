@@ -1,10 +1,10 @@
 import { useCart } from 'react-use-cart';
 import s from './Basket.module.scss';
-
-import Button from 'react-bootstrap/Button';
+import {ReactComponent as BasketLogo} from './img/basket.svg'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { BasketItem } from './BasketItem';
+// import { ButtonStyle } from 'Utils/StyledLink';
 
 export const Basket = () => {
   const {
@@ -20,11 +20,12 @@ export const Basket = () => {
 
   return (
     <>
-      {['bottom'].map(placement => (
+      {['bottom-end'].map(placement => (
         <OverlayTrigger
           trigger="click"
           key={placement}
           placement={placement}
+          rootClose={true}
           overlay={
             <Popover id={`popover-positioned-${placement}`}>
               <Popover.Body className={s.popoverBody}>
@@ -35,9 +36,10 @@ export const Basket = () => {
             </Popover>
           }
         >
-          <Button>
-            корзина <span>({totalItems})</span>
-          </Button>
+          <button className={s.btnBasket}>
+           <BasketLogo className={s.imgBasket}/> <span>{totalItems}</span>
+           
+          </button>
         </OverlayTrigger>
       ))}
     </>

@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items:flex-end;
+    padding: 0 25px;
+}
+.input{
+    margin-bottom: 7px;
+    border-radius: 25px;
+    height: 25px;
+    padding: 5px 20px;
+    width: 100%;
+}
+.btmForm{
+    width: 150px;
+    padding: 8px;
+    border-radius: 25px;
+}

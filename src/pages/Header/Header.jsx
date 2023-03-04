@@ -1,5 +1,6 @@
 import { Basket } from 'pages/Basket/Basket';
-import { Link } from 'react-router-dom';
+
+import { StyledLink } from 'Utils/StyledLink';
 import s from './Header.module.scss';
 
 export const Header = () => {
@@ -7,13 +8,14 @@ export const Header = () => {
     <>
       <header className={s.header}>
         <nav>
-          <Link to="/dashboard">Dashboard</Link>
+          {/* <Link to="/dashboard">Dashboard</Link> */}
+
+          <StyledLink to="/dashboard">Dashboard</StyledLink>
           &nbsp;&nbsp;
           {/* <Link to="/login">Log In</Link> */}
         </nav>
         <div>
           <Basket />
-          <button>Log Out</button>
         </div>
       </header>
     </>

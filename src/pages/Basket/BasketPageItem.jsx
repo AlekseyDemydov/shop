@@ -8,7 +8,7 @@ export const BasketPageItem = () => {
     items,
     isEmpty,
     cartTotal,
-    emptyCart,
+    // emptyCart,
     updateItemQuantity,
     removeItem,
   } = useCart();
@@ -18,33 +18,42 @@ export const BasketPageItem = () => {
         return (
           <div className={s.basketBox} key={index}>
             <img src={item.img} alt="" className={s.img} />
-            <div>
-              <div>{item.title}</div>
-              <div>{item.price} $</div>
-              <button
-                onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
-              >
-                -
-              </button>
-              <span>{item.quantity}</span>
-              <button
-                onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
-              >
-                +
-              </button>
-              <button onClick={() => removeItem(item.id)}>remove</button>
+            <div className={s.itemBasket}>
+              <div className={s.price}>
+                <div>{item.title}</div>
+                <div>{item.price} $</div>
+              </div>
+              <div className={s.quantityBtn}>
+                <button
+                  onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
+                >
+                  -
+                </button>
+                <span className={s.quantity}>{item.quantity}</span>
+                <button
+                  onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
+                >
+                  +
+                </button>
+                <button
+                  onClick={() => removeItem(item.id)}
+                  className={s.remove}
+                >
+                  remove
+                </button>
+              </div>
             </div>
           </div>
         );
       })}
       <h5>total price: {cartTotal} $</h5>
-      <button onClick={() => emptyCart()}>clear</button>
+      {/* <button onClick={() => emptyCart()}>clear</button> */}
       <br />
 
       {!isEmpty && (
         <Form
           item={items.map(item => {
-            return item.title;
+            return `${item.title} x${item.quantity} - ${item.price} $`;
           })}
           summ={cartTotal}
         />
