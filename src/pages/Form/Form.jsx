@@ -1,16 +1,22 @@
 import axios from 'axios';
+import { useCart } from 'react-use-cart';
 import Notiflix from 'notiflix';
 import React from 'react';
 import s from './Form.module.scss'
 
+
 export const Form = props => {
+  const {emptyCart } =
+  useCart();
+
+
   const TOKEN = '5929832704:AAH-RXP0_n5acEoTgDqHJjUWgdvN7ORkM2U';
   const CHAT = '-1001889830077';
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const nameInput = React.createRef();
   const textInput = React.createRef();
-// nameInput.placeholder = 'Введите имя'
+
   const Send = e => {
     e.preventDefault();
 
@@ -46,6 +52,8 @@ export const Form = props => {
           Notiflix.Notify.success('done');
         });
     }
+    emptyCart()
+    
   };
 
   return (
