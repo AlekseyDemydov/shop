@@ -37,7 +37,7 @@ export const Basket = () => {
           }
         >
           <button className={s.btnBasket}>
-           <BasketLogo className={s.imgBasket}/> <span>{totalItems}</span>
+           <BasketLogo className={s.imgBasket}/> <span className={s.total}>{totalItems}</span>
            
           </button>
         </OverlayTrigger>
