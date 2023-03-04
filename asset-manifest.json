@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.115aff97.css",
-    "main.js": "/shop/static/js/main.3ac1a454.js",
+    "main.css": "/shop/static/css/main.8d92eb7c.css",
+    "main.js": "/shop/static/js/main.df1c6a5a.js",
     "static/media/suzuki.jpg": "/shop/static/media/suzuki.b5d0c4fa75bda46bcffe.jpg",
     "static/media/ford.jpg": "/shop/static/media/ford.7a8ae1fc38284b6fc6e1.jpg",
     "static/media/bmv.jpg": "/shop/static/media/bmv.618c6d428b344d95041c.jpg",
     "static/media/lanos.jpg": "/shop/static/media/lanos.02e5cf3469e87cdf9263.jpg",
     "static/media/shevrole.jpg": "/shop/static/media/shevrole.7dab2ef1bf79182bc6c0.jpg",
+    "static/media/basket.svg": "/shop/static/media/basket.c6c3cc25b7f48cf0ffc4a8b4f5e21b31.svg",
     "index.html": "/shop/index.html",
-    "main.115aff97.css.map": "/shop/static/css/main.115aff97.css.map",
-    "main.3ac1a454.js.map": "/shop/static/js/main.3ac1a454.js.map"
+    "main.8d92eb7c.css.map": "/shop/static/css/main.8d92eb7c.css.map",
+    "main.df1c6a5a.js.map": "/shop/static/js/main.df1c6a5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.115aff97.css",
-    "static/js/main.3ac1a454.js"
+    "static/css/main.8d92eb7c.css",
+    "static/js/main.df1c6a5a.js"
   ]
 }
