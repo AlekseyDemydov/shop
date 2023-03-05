@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.1846045d.css",
-    "main.js": "/shop/static/js/main.720c9b30.js",
+    "main.css": "/shop/static/css/main.37a9c9c7.css",
+    "main.js": "/shop/static/js/main.e1cfd03e.js",
     "static/media/suzuki.jpg": "/shop/static/media/suzuki.b5d0c4fa75bda46bcffe.jpg",
     "static/media/logo.png": "/shop/static/media/logo.b9eb463482dfc20a70a1.png",
     "static/media/ford.jpg": "/shop/static/media/ford.7a8ae1fc38284b6fc6e1.jpg",
@@ -12,11 +12,11 @@
     "static/media/auto.jpg": "/shop/static/media/auto.251f8e8fbfe4fbbc720b.jpg",
     "static/media/basket.svg": "/shop/static/media/basket.c6c3cc25b7f48cf0ffc4a8b4f5e21b31.svg",
     "index.html": "/shop/index.html",
-    "main.1846045d.css.map": "/shop/static/css/main.1846045d.css.map",
-    "main.720c9b30.js.map": "/shop/static/js/main.720c9b30.js.map"
+    "main.37a9c9c7.css.map": "/shop/static/css/main.37a9c9c7.css.map",
+    "main.e1cfd03e.js.map": "/shop/static/js/main.e1cfd03e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1846045d.css",
-    "static/js/main.720c9b30.js"
+    "static/css/main.37a9c9c7.css",
+    "static/js/main.e1cfd03e.js"
   ]
 }
