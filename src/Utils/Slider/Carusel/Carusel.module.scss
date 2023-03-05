@@ -12,6 +12,9 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  @media screen and (max-width: 401px) {
+    overflow: scroll;
+  }
 }
 .allPagesContainer {
   height: 100%;

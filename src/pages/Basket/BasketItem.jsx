@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom';
+
 import { useCart } from 'react-use-cart';
 import s from './Basket.module.scss';
 
 export const BasketItem = () => {
+
+  
   const { items, cartTotal, emptyCart, updateItemQuantity, removeItem } =
     useCart();
+    
   return (
     <>
       {items.map((item, index) => {
@@ -38,7 +41,7 @@ export const BasketItem = () => {
       <button onClick={() => emptyCart()} className={s.clear}>
         clear
       </button>
-      <Link to="/basket">офрмить</Link>
+      
     </>
   );
 };

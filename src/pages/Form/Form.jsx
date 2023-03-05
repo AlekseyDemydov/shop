@@ -51,8 +51,9 @@ export const Form = props => {
         .finally(() => {
           Notiflix.Notify.success('done');
         });
+        emptyCart()
     }
-    emptyCart()
+    
     
   };
 
