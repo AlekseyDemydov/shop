@@ -9,10 +9,19 @@
   background-color: white;
   top: 8px;
   align-items: center;
+  z-index: 100;
+  @media screen and (max-width: 401px) {
+    width: 360px;
+    padding: 5px;
+  }
 }
 .logo {
   width: 100px;
   margin-right: 25px;
+  @media screen and (max-width: 401px) {
+    width: 60px;
+    
+  }
 }
 .nav {
   display: flex;

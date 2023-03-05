@@ -1,6 +1,10 @@
 .img {
   width: 150px;
   margin-right: 10px;
+  @media screen and (max-width: 401px) {
+    width: 100px;
+    
+  }
 }
 
 .popoverBody {
@@ -14,6 +18,7 @@
   display: flex;
   align-items: center;
   height: 100px;
+  width: 100%;
 }
 .basketBox:not(:last-of-type) {
   margin-bottom: 10px;
@@ -36,12 +41,20 @@
 .itemBasket {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  // height: 100%;
   justify-content: space-between;
+  @media screen and (max-width: 401px) {
+    width: 100%;
+    
+  }
 }
 .imgBasket {
   width: 40px;
   height: 40px;
+  @media screen and (max-width: 401px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .btnBasket {
@@ -57,10 +70,15 @@
     }
   }
 }
-.total{
-    background-color: black;
-    border-radius: 100%;
-    padding: 4px 8px;
-    
-    font-weight: 900;
+.total {
+  background-color: black;
+  border-radius: 100%;
+  padding: 4px 8px;
+
+  font-weight: 900;
+  @media screen and (max-width: 401px) {
+    font-weight: 400;
+    font-size: 6px;
+    padding: 4px 5px;
+  }
 }

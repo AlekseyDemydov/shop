@@ -1,0 +1,26 @@
+.mainContainer {
+  height: 150px;
+  width: 510px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 401px) {
+    width: 340px;
+  }
+}
+
+.window {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.allPagesContainer {
+  height: 100%;
+  display: flex;
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.arrow {
+  cursor: pointer;
+}

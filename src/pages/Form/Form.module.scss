@@ -4,6 +4,10 @@
     width: 500px;
     align-items:flex-end;
     padding: 0 25px;
+    @media screen and (max-width: 401px) {
+        width: 100%;
+        padding: 0;
+      }
 }
 .input{
     margin-bottom: 7px;
@@ -11,6 +15,9 @@
     height: 25px;
     padding: 5px 20px;
     width: 100%;
+    @media screen and (max-width: 401px) {
+        width: 300px;
+      }
 }
 .btmForm{
     width: 150px;

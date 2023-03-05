@@ -1,6 +1,6 @@
 import { useCart } from 'react-use-cart';
 import s from './Basket.module.scss';
-import {ReactComponent as BasketLogo} from './img/basket.svg'
+import { ReactComponent as BasketLogo } from './img/basket.svg';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { BasketItem } from './BasketItem';
@@ -37,8 +37,8 @@ export const Basket = () => {
           }
         >
           <button className={s.btnBasket}>
-           <BasketLogo className={s.imgBasket}/> <span className={s.total}>{totalItems}</span>
-           
+            <BasketLogo className={s.imgBasket} />{' '}
+            <span className={s.total}>{totalItems}</span>
           </button>
         </OverlayTrigger>
       ))}
