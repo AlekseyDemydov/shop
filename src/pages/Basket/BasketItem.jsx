@@ -17,7 +17,7 @@ export const BasketItem = () => {
             <div>
               <div className={s.price}>
                 <div>{item.title}</div>
-                <div>{item.price} $</div>
+                <div>{item.price*item.quantity} $</div>
               </div>
               <button
                 onClick={() => updateItemQuantity(item.id, item.quantity - 1)}

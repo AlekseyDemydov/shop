@@ -42,11 +42,12 @@
   display: flex;
   flex-direction: column;
   // height: 100%;
+  width: 200px;
   justify-content: space-between;
-  @media screen and (max-width: 401px) {
-    width: 100%;
+  // @media screen and (max-width: 401px) {
+  //   width: 100;
     
-  }
+  // }
 }
 .imgBasket {
   width: 40px;

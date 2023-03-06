@@ -1,7 +1,7 @@
 import { useCart } from 'react-use-cart';
 import s from './Basket.module.scss';
 import { ReactComponent as BasketLogo } from './img/basket.svg';
-import Overlay from 'react-bootstrap/OverlayTrigger';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { BasketItem } from './BasketItem';
 import { useState } from 'react';
@@ -15,6 +15,7 @@ export const Basket = () => {
   const handleClick = (event) => {
     setShow(!show);
     setTarget(event.target);
+    
   };
   const {
     // items,
@@ -31,11 +32,12 @@ export const Basket = () => {
     <>
       {
       ['bottom-end'].map(placement => (
-        <Overlay
+        <OverlayTrigger
           trigger="click"
           key={placement}
           placement={placement}
           rootClose={true}
+          rootCloseEvent='click'
           show={show}
           target={target}
           overlay={
@@ -43,16 +45,21 @@ export const Basket = () => {
               <Popover.Body className={s.popoverBody}>
                 {isEmpty && <p>your basket is empty</p>}
 
-                {!isEmpty && <div><BasketItem /> <Link to="/shop/basket" onClick={handleClick}>офрмить</Link></div>}
+                {!isEmpty && <div><BasketItem /> <Link to="/shop/basket" 
+                onClick={handleClick}
+              
+                >офрмить</Link></div>}
               </Popover.Body>
             </Popover>
           }
         >
-          <button className={s.btnBasket} onClick={handleClick}>
+          <button className={s.btnBasket} 
+          onClick={handleClick}
+          >
             <BasketLogo className={s.imgBasket} />{' '}
             <span className={s.total}>{totalItems}</span>
           </button>
-        </Overlay>
+        </OverlayTrigger>
       ))}
     </>
   );

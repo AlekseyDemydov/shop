@@ -21,7 +21,7 @@ export const BasketPageItem = () => {
             <div className={s.itemBasket}>
               <div className={s.price}>
                 <div>{item.title}</div>
-                <div>{item.price} $</div>
+                <div>{item.price*item.quantity} $</div>
               </div>
               <div className={s.quantityBtn}>
                 <button
