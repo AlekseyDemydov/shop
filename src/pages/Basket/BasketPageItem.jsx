@@ -53,7 +53,7 @@ export const BasketPageItem = () => {
       {!isEmpty && (
         <Form
           item={items.map(item => {
-            return `${item.title} x${item.quantity} - ${item.price} $`;
+            return `${item.title} x${item.quantity} - ${item.price*item.quantity} $`;
           })}
           summ={cartTotal}
         />
