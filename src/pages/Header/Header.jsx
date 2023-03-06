@@ -9,10 +9,10 @@ export const Header = () => {
     <>
       <header className={s.header}>
         <nav className={s.nav}>
-          <Link to="/">
+          <Link to="/shop">
             <img src={logo} alt="" className={s.logo} />
           </Link>
-          <StyledLink to="/dashboard">Dashboard</StyledLink>
+          <StyledLink to="/shop/dashboard">Dashboard</StyledLink>
         
         </nav>
         <div>

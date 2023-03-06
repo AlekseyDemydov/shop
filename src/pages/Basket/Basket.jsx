@@ -32,7 +32,7 @@ export const Basket = () => {
       {
       ['bottom-end'].map(placement => (
         <Overlay
-          // trigger="click"
+          trigger="click"
           key={placement}
           placement={placement}
           rootClose={true}
@@ -43,7 +43,7 @@ export const Basket = () => {
               <Popover.Body className={s.popoverBody}>
                 {isEmpty && <p>your basket is empty</p>}
 
-                {!isEmpty && <div><BasketItem /> <Link to="/basket" onClick={handleClick}>офрмить</Link></div>}
+                {!isEmpty && <div><BasketItem /> <Link to="/shop/basket" onClick={handleClick}>офрмить</Link></div>}
               </Popover.Body>
             </Popover>
           }

@@ -20,13 +20,13 @@ export const DashboardPage = () => {
       <Slide
       title1='car'
         link1={
-          <Link to="/dashboard/car">
+          <Link to="/shop/dashboard/car">
             <img src={auto} alt="" className={s.imgSlide} />
           </Link>
         }
         title2='moto'
         link2={
-          <Link to="/dashboard/moto">
+          <Link to="/shop/dashboard/moto">
             <img src={moto} alt="" className={s.imgSlide} />
           </Link>
         }
