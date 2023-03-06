@@ -22,7 +22,7 @@ export const App = () => {
           </Route>
           <Route path='basket' element={<BasketPage/>}/>
           {/* <Route path='form' element={<Form/>}/> */}
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/shop" replace />} />
         </Route>
       </Routes>
       </CartProvider>
