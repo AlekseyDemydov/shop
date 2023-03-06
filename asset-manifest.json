@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shop/static/css/main.37a9c9c7.css",
-    "main.js": "/shop/static/js/main.a8ed2177.js",
+    "main.js": "/shop/static/js/main.7458471a.js",
     "static/media/suzuki.jpg": "/shop/static/media/suzuki.b5d0c4fa75bda46bcffe.jpg",
     "static/media/logo.png": "/shop/static/media/logo.b9eb463482dfc20a70a1.png",
     "static/media/ford.jpg": "/shop/static/media/ford.7a8ae1fc38284b6fc6e1.jpg",
@@ -13,10 +13,10 @@
     "static/media/basket.svg": "/shop/static/media/basket.c6c3cc25b7f48cf0ffc4a8b4f5e21b31.svg",
     "index.html": "/shop/index.html",
     "main.37a9c9c7.css.map": "/shop/static/css/main.37a9c9c7.css.map",
-    "main.a8ed2177.js.map": "/shop/static/js/main.a8ed2177.js.map"
+    "main.7458471a.js.map": "/shop/static/js/main.7458471a.js.map"
   },
   "entrypoints": [
     "static/css/main.37a9c9c7.css",
-    "static/js/main.a8ed2177.js"
+    "static/js/main.7458471a.js"
   ]
 }
