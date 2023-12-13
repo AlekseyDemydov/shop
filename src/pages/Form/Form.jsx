@@ -10,8 +10,8 @@ export const Form = props => {
   useCart();
 
 
-  const TOKEN = '5929832704:AAH-RXP0_n5acEoTgDqHJjUWgdvN7ORkM2U';
-  const CHAT = '-1001889830077';
+  const TOKEN = '6860224388:AAH_jiGlu9A8kRh7aYaRDWqmLJbqttDKeTs';
+  const CHAT = '1054670906';
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const nameInput = React.createRef();

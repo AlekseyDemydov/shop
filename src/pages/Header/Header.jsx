@@ -13,6 +13,8 @@ export const Header = () => {
             <img src={logo} alt="" className={s.logo} />
           </Link>
           <StyledLink to="/shop/dashboard">Dashboard</StyledLink>
+         
+          <StyledLink to="/shop/login">log in</StyledLink>
         
         </nav>
         <div>
